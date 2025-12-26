@@ -11,7 +11,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "135791"
     volumes:
-      - /Users/tmota/devel/teach/__25FCSC3022_CCCS/mysql:/var/lib/mysql
+      - /Users/yourname/CSC3022/mysql:/var/lib/mysql
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p$${MYSQL_ROOT_PASSWORD} || exit 1"]
       interval: 10s
